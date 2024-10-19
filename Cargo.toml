@@ -1,0 +1,12 @@
+[package]
+name = "annotation-format-converter"
+version = "0.1.0"
+edition = "2021"
+authors = ["wxg"]
+license = "Apache-2.0"
+repository = ""
+
+[dependencies]
+quick-xml = { version = "0.36.2", features = ["serialize"] }
+clap = { version = "4.5.20", features = ["derive"] }
+serde = { version = "1.0.210", features = ["derive"] }
