@@ -51,7 +51,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         }
     }
     if source.is_dir() {
-        for dir in source.read_dir() {
+        while let Ok(dir) = source.read_dir() {
             for dir in dir {
                 let path = dir?.path();
                 if path.is_file() {
