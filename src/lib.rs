@@ -48,6 +48,8 @@ impl Converter {
     pub fn new(classes: Vec<String>) -> Converter {
         Converter { classes }
     }
+
+    /// converting Voc  XML format to Yolo TXT format
     pub fn voc_to_yolo(&self, xml: &str, dest: &str) -> Result<(), Box<dyn Error>> {
         let content = fs::read_to_string(xml)?;
         let voc = de::from_str::<Voc>(content.as_str())?;
