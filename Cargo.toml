@@ -1,5 +1,6 @@
 [package]
 name = "annotation-format-converter"
+description = "Convert the annotation format of the dataset, such as converting Voc's XML format to Yolo's TXT format"
 version = "0.1.0"
 edition = "2021"
 authors = ["wxg"]
